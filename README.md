@@ -41,8 +41,48 @@ To reset the database:
 docker-compose down --volumes
 ```
 
+## Testing
+The test environment is based on TravisCI. It tests automatically with every commit.
+
 ## Project Structure
-TODO: Add project structure.
+```
+client (Contains the React Frontend Components)
+-- components
+  -- matching
+  -- profile
+  -- watchlist
+-- modules
+  -- App
+  -- Intl (for internationalisation)
+  -- Account
+  -- Job
+  -- Advertisement
+-- utils
+  -- tests
+  -- ApiCaller.js (for checking the connection to Express)
+-- App.js
+-- index.js
+-- main.css
+-- reducers.js
+-- routes.js
+-- store.js
+
+config
+-- blueprints
+
+Intl
+-- localizationData
+-- setup.js
+
+server
+-- controllers
+-- models
+-- routes
+-- util
+-- config.js
+-- dummyData.js (from MERN template)
+-- server.js
+```
 
 ## Authors and Annotations
 - Christian Becker (M.Sc. Information Systems)
